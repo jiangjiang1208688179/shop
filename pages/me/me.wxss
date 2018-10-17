@@ -1,0 +1,27 @@
+.content{
+  margin: 10rpx;
+  border:1px solid #8e8e8e;
+  color: #8e8e8e;
+}
+.showOrderList{
+  display: flex;
+  justify-content: space-between;
+}
+.goodsStatus{
+  display: flex;
+  padding: 10rpx;
+  margin-top:20rpx;
+  margin-bottom: 20rpx; 
+  justify-content: space-between;
+}
+.goodsStatusItem{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 140rpx;
+  font-size: 28rpx;
+}
+.goodsStatusItem image{
+  width: 80rpx;
+  height: 80rpx;
+}

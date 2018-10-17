@@ -12,8 +12,8 @@
   </block>
 </swiper>
 <view class='homeMenus'>
-  <navigator wx:for="{{homeMenus}}" wx:key="{{homeMenus.id}}" class='homeMenusItem'>
-    <view><image src='{{item.imgUrl}}' style='width:100rpx;height:100rpx;'></image></view>
+  <navigator style='width:155rpx;height:250rpx;border:1px solid #ccc' wx:for="{{homeMenus}}" wx:key="{{homeMenus.id}}" class='homeMenusItem' >
+    <view><image src='{{item.imgUrl}}' style='width:150rpx;height:150rpx; border:2px solid #ccc'></image></view>
     <view>{{item.menuName}}</view>
   </navigator>
 </view>
@@ -26,7 +26,7 @@
     <view class='goodTitle'>福利专场</view>
     <view class='textColor'>每天早10晚8准时上新</view>
     <view class='goodItem'>
-      <view wx:for="{{getHotGoodsList}}" style='border:2rpx solid #e6e6e6;width:340rpx;height:450rpx;display:block'><image style='width:200rpx;height:350rpx;'></image></view>
+      <view wx:for="{{getHotGoodsList}}" style='border:2rpx solid #e6e6e6;width:340rpx;height:450rpx;display:block'><image src='{{item.list.imgUrl}}' style='width:200rpx;height:350rpx;'></image></view>
     </view>
   </view>
 </view>
