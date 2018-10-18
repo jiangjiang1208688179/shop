@@ -1,0 +1,22 @@
+.more{
+  display: flex;
+  flex-direction: row;
+}
+#navLeft{
+  border: 2rpx solid #ccc;
+  width: 30%;
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+}
+#navLeft view{
+  width: 90%;
+  border: 1rpx solid #ccc;
+  height: 80rpx;
+  padding: 10rpx;
+}
+#showRight{
+  width: 80%;
+  border: 2rpx solid #ccc;
+  height: 300rpx;
+}

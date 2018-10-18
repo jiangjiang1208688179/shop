@@ -12,15 +12,19 @@
   </block>
 </swiper>
 <view class='homeMenus'>
-  <navigator style='width:155rpx;height:250rpx;border:1px solid #ccc' wx:for="{{homeMenus}}" wx:key="{{homeMenus.id}}" class='homeMenusItem' >
-    <view><image src='{{item.imgUrl}}' style='width:150rpx;height:150rpx; border:2px solid #ccc'></image></view>
+  <navigator wx:for="{{homeMenus}}" wx:key="{{homeMenus.id}}" class='homeMenusItem' >
+    <view><image src='{{item.imgUrl}}' style='width:120rpx;height:120rpx;'></image></view>
     <view>{{item.menuName}}</view>
   </navigator>
 </view>
 
 <view class='sellGoods'>
   <view class='goodTitle'>新品特卖</view>
-  <view style='height:500rpx; border:2rpx solid #e6e6e6'><image></image></view>
+  <view class='newGoodsItem' style='' wx:for="{{list.list}}" wx:key='{{list.list.id}}'>
+    <image src='{{item.imgUrl}}' style='width:100%;'></image>
+    <view class='newGoodsItemName'>{{item.name}}</view>
+    <view class='newGoodsItemActive'>{{item.remark}}</view>
+  </view>
 
   <view class='specialGoods'>
     <view class='goodTitle'>福利专场</view>

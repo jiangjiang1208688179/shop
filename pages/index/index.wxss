@@ -18,6 +18,8 @@
   flex-direction: column;
   padding: 12rpx;
   text-align: center;
+  width:155rpx;
+  height:190rpx;
 }
 .sellGoods{
   padding: 20rpx;
@@ -26,6 +28,17 @@
   font-size: 42rpx;
   padding-bottom: 5rpx;
   margin-top:15rpx;
+}
+.newGoodsItem{
+  margin-top:20rpx;
+  margin-bottom: 20rpx; 
+}
+.newGoodsItemName{
+  font-weight: 500;
+}
+.newGoodsItemActive{
+  font-size: 25rpx;
+  color: #6A5ACD;
 }
 .textColor{
   color: #8a8a8a;
