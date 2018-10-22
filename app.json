@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/more/more",
     "pages/me/me",
-    "pages/index/index",
     "pages/mycart/mycart"
   ],
   "window":{

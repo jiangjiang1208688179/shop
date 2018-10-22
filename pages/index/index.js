@@ -9,7 +9,7 @@ Page({
     banner:'',
     homeMenus:['1','2','3','4','5','6','7'],
     activityBbrands:'',
-    getHotGoodsList:['e','rt']
+    getHotGoodsList: ''
   },
   //事件处理函数
   bindViewTap: function() {
@@ -40,6 +40,11 @@ Page({
         list: res.result
       })
     });
+    API.ajax('goods/getHotGoodsList?key=',function(res) {
+      that.setData({
+        getHotGoodsList: res.result
+      })
+    })
     // wx.request({
     //   url: 'https://100boot.cn/wxShop/home/navBar?key=we'+key,
     //   success(res){

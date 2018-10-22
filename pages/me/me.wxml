@@ -1,3 +1,7 @@
+<view class='mycount'>
+  <image src='{{userInfor.avatarUrl}}'></image>
+  <text>{{userInfor.nickName}}</text>
+</view>
 <view class='content'>
   <view class='showOrderList'>
     <view>我的订单</view>
@@ -7,6 +11,12 @@
     <view class='goodsStatusItem' wx:for="{{goodsStatus}}" wx:key="{{goodsStatus.name}}">
       <view><image src="{{item.url}}"></image></view>
       <view>{{item.name}}</view>
+    </view>
+  </view>
+  <view>
+    <view class='someInfor' wx:for="{{other}}" wx:key="{{other.name}}">
+      <view><image src='{{item.url}}'></image></view>  
+      <view class='myOther'>{{item.name}}</view> 
     </view>
   </view>
 </view>

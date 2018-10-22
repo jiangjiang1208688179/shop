@@ -1,9 +1,20 @@
 <view class='more'>
-  <view id="navLeft" bindtap="navLeftIn">
-    <view>1</view>
-    <view>2</view>
-    <view>3</view>
-    <view>4</view>
+  <view id="navLeft">
+    <block wx:for="{{classifyItems}}" wx:key = "{{classifyItem.id}}">
+  <!--利用active类，将北=背景颜色变白实现导航的特效  -->
+      <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="navLeftIn" data-index="{{index}}" data-id="{{item.id}}">
+          {{item.name}}
+        </view>
+      </block>
   </view>
-  <view id='showRight'></view>
+    
+  <view id='showRight'>
+  <!-- <view>ewrtttgrtyrytt</view> -->
+   <view class="moreGoods" wx:if="{{classifyItems[curIndex].ishaveChild}}">
+    <view class="moreGoodsItem" wx:for="{{classifyItems[curIndex].shopClassifyDtoList}}" wx:key="{{classifyItems[curIndex].shopClassifyDtoList.id}}">
+      <image src='{{item.imgUrl}}'></image>
+       <text>{{item.name}}</text> 
+    </view>
+   </view>
+  </view>
 </view>
