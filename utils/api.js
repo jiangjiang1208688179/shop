@@ -544,6 +544,76 @@ function ajax(data = '', fn, method = "get", header = {}) {
             }]
         })
       }
+      if (data == 'goods/getGoodsInfo?key='){
+        res = Mock.mock({
+          "code": 100,
+          "message": "查询成功",
+          "result":
+          {
+            "id": 56,
+            "name": "雅诗兰黛（Estee Lauder）持妆无瑕气垫粉霜 17# SPF30+/PA+++ 12g（1W1 BONE 自然偏白肤色）新老包装随机  ",
+            "price": 369.00,
+            "privilegePrice": 420.00,
+            "imgUrl": "https://img11.360buyimg.com/n7/s370x370_jfs/t22306/277/1526836895/190400/1f662473/5b2c90c8N87f619ac.jpg!q70.jpg",
+            "details": "https://img30.360buyimg.com/sku/jfs/t23023/35/468034734/203240/d969c336/5b30bac1N7cac0f4c.jpg;https://img30.360buyimg.com/sku/jfs/t23656/57/473977005/169479/1ccfab1e/5b30bac1N937c5918.jpg;https://img30.360buyimg.com/sku/jfs/t21418/50/1690364234/57472/5410ac22/5b30bac1Nbc5203f9.jpg;https://img30.360buyimg.com/sku/jfs/t24295/105/563158282/64093/b731726d/5b359d55Na8f62971.jpg;https://img30.360buyimg.com/sku/jfs/t22762/225/464364516/106407/65d0f278/5b30bac1Nfad8f2cd.jpg;https://img30.360buyimg.com/sku/jfs/t21421/72/1689395488/44217/b1498e6d/5b30bac1Nb72cd089.jpg;https://img30.360buyimg.com/sku/jfs/t21412/165/1760284332/77072/5090b482/5b30bac1Nf244a651.jpg;https://img30.360buyimg.com/sku/jfs/t24439/61/479709911/56910/d6c592ea/5b30bac1N8e62a761.jpg;https://img30.360buyimg.com/sku/jfs/t24439/61/479709911/56910/d6c592ea/5b30bac1N8e62a761.jpg",
+            "remark": null,
+            "createDate": 1539763566000,
+            "updateDate": 1531123488000,
+            "clickRate": 875,
+            "buyRate": 0,
+            "stock": 0,
+            "isHot": "0",
+            "isNew": "1",
+            "classifyId": null,
+            "discount": "8.8",
+            "activityId": 3,
+            "shopGoodsImageList": [
+              {
+                "id": null,
+                "imgUrl": "https://img11.360buyimg.com/n7/s370x370_jfs/t22306/277/1526836895/190400/1f662473/5b2c90c8N87f619ac.jpg!q70.jpg",
+                "remark": null,
+                "goodsId": null,
+                "status": null
+              },
+              {
+                "id": null,
+                "imgUrl": "https://m.360buyimg.com/mobilecms/s750x750_jfs/t22693/275/340388583/237327/dcddd5c2/5b2c90c8N70bb6871.jpg!q80.dpg",
+                "remark": null,
+                "goodsId": null,
+                "status": null
+              },
+              {
+                "id": null,
+                "imgUrl": "https://m.360buyimg.com/mobilecms/s750x750_jfs/t6652/256/2077970420/239163/6f25fc84/595c7881Nb02c3d2f.jpg!q80.dpg",
+                "remark": null,
+                "goodsId": null,
+                "status": null
+              },
+              {
+                "id": null,
+                "imgUrl": "https://img12.360buyimg.com/jdphoto/jfs/t11506/139/448468161/290/701986d3/59f085fbN2932bfce.jpg.dpg",
+                "remark": null,
+                "goodsId": null,
+                "status": null
+              },
+              {
+                "id": null,
+                "imgUrl": "https://m.360buyimg.com/mobilecms/s750x750_jfs/t18394/245/1176880976/140472/591bf3f1/5abdff31N4b81c9c9.jpg!q80.dpg",
+                "remark": null,
+                "goodsId": null,
+                "status": null
+              },
+              {
+                "id": null,
+                "imgUrl": "https:////m.360buyimg.com/mobilecms/s750x750_jfs/t16906/219/1121815928/141422/c659cb0f/5abdff36Nb1811aac.jpg!q80.dpg",
+                "remark": null,
+                "goodsId": null,
+                "status": null
+              }],
+            "desc": null
+          }
+        })
+      }
       
         // 输出结果
        // console.log(JSON.stringify(res, null, 2))

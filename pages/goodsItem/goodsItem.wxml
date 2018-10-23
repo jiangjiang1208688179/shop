@@ -1,0 +1,27 @@
+<swiper indicator-dots="true"
+  autoplay="true" duration="ture" style='height:600rpx'>
+  <block wx:for="{{goodsItem.shopGoodsImageList}}">
+    <swiper-item>
+      <image src="{{item.imgUrl}}" class="slide-image" style='width:100%;height:100%'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='content'>
+  <view class='goodsName'>{{goodsItem.name}}</view>
+  <view class='price'>
+    <view class='newPrice'>￥{{goodsItem.price}}</view>
+    <view class='oldPrice'>原价：￥{{goodsItem.privilegePrice}}</view>
+  </view>
+  <view style='margin-bottom:30rpx;margin-top:30rpx;'>商品详情</view>
+  <view wx:for="{{showInstr}}">
+    <image src='{{item}}'></image>
+  </view>
+</view>
+<view class='goodsItemBottom'>
+  <!-- <view class='action-ico'> -->
+    <view class='action-ico1 line '><image src='../../img/favor.png'></image> </view>
+    <view class='action-ico1'><image src='../../img/cart-1.png'></image></view>
+  <!-- </view> -->
+  <view class='action-ico colorCart'>加入购物车</view>
+  <view class='action-ico colorGet'>立即购买</view>
+</view>
