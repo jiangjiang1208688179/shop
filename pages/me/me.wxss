@@ -48,6 +48,7 @@
   justify-content: space-between;
   font-size: 30rpx;
   margin-top:20rpx;
+  align-items: center;
 }
 .someInfor image{
   width: 40rpx;

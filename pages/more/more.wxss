@@ -39,7 +39,7 @@
 .moreGoodsItem{
   width: 200rpx;
   height: 250rpx;
-  padding: 26rpx;
+  padding: 24rpx;
   margin-top: 10rpx;
   display: flex;
   flex-direction: column;
