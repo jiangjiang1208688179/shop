@@ -1,16 +1,17 @@
-<swiper indicator-dots="true"
+<!-- <swiper indicator-dots="true"
   autoplay="true" duration="ture" style='height:600rpx'>
-  <block wx:for="{{goodsItem.shopGoodsImageList}}">
+  <block wx:for="{{goodsItem.result[0].imgUrl}}">
     <swiper-item>
       <image src="{{item.imgUrl}}" class="slide-image" style='width:100%;height:100%'/>
     </swiper-item>
   </block>
-</swiper>
+</swiper> -->
+<view><image style='width:100%;height:600rpx;' src="{{goodsItem.result[0].imgUrl}}" class="slide-image"/></view>
 <view class='content'>
-  <view class='goodsName'>{{goodsItem.name}}</view>
+  <view class='goodsName'>{{goodsItem.result[0].name}}</view>
   <view class='price'>
-    <view class='newPrice'>￥{{goodsItem.price}}</view>
-    <view class='oldPrice'>原价：￥{{goodsItem.privilegePrice}}</view>
+    <view class='newPrice'>￥{{goodsItem.result[0].price}}</view>
+    <view class='oldPrice'>原价：￥{{goodsItem.result[0].privilegePrice}}</view>
   </view>
   <view style='margin-bottom:30rpx;margin-top:30rpx;'>商品详情</view>
   <view wx:for="{{showInstr}}">

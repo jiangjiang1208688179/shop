@@ -1,14 +1,16 @@
-let API_HOST = "https://100boot.cn/wxShop/";
-let DEBUG = true;//切换数据入口
+// let API_HOST = "https://100boot.cn/wxShop/";
+let API_HOST = "http://127.0.0.1:3001/"
+let DEBUG = false;//切换数据入口
 var Mock = require('mock.js')
 function ajax(data = '', fn, method = "get", header = {}) {
     if (!DEBUG) {
         wx.request({
-            url: config.API_HOST + data,
+            url: API_HOST + data,
             method: method ? method : 'get',
-            data: {},
+            // data: {},
             header: header ? header : { "Content-Type": "application/json" },
             success: function (res) {
+              console
                 fn(res);
             }
         });
@@ -198,7 +200,7 @@ function ajax(data = '', fn, method = "get", header = {}) {
         })
       }
       //福利专场
-      if (data == "goods/getHotGoodsList?key="){
+      if (data == "goods"){
         res = Mock.mock({
           "code": 100,
           "message": "查询成功",
@@ -544,7 +546,7 @@ function ajax(data = '', fn, method = "get", header = {}) {
             }]
         })
       }
-      if (data == 'goods/getGoodsInfo?key='){
+      if (data == 'goods/detail'){
         res = Mock.mock({
           "code": 100,
           "message": "查询成功",

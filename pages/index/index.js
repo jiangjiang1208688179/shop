@@ -19,7 +19,7 @@ Page({
   },
   onLoad: function () {
     var that = this;
-    var key ='9880431b4c3e4cf8887bdf93dad50930';
+    // var key ='9880431b4c3e4cf8887bdf93dad50930';
     API.ajax('home/navBar?key=', function (res) {
       that.setData({
         navTop: res.result
@@ -40,10 +40,11 @@ Page({
         list: res.result
       })
     });
-    API.ajax('goods/getHotGoodsList?key=',function(res) {
+    API.ajax('goods',function(res) {
       that.setData({
-        getHotGoodsList: res.result
+        getHotGoodsList: res.data
       })
+      console.log('frety',res.data);
     })
     // wx.request({
     //   url: 'https://100boot.cn/wxShop/home/navBar?key=we'+key,

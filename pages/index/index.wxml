@@ -20,20 +20,20 @@
   </view> 
 
   <view class='sellGoods'>
-     <view class='goodTitle'>新品特卖</view>
+     <!-- <view class='goodTitle'>新品特卖</view>
      <view  class='newGoodsItem' style='' wx:for="{{list.list}}" wx:key='{{list.list.id}}'>
       <navigator url="/pages/goodsItem/goodsItem?id={{item.id}}">
         <image src='{{item.imgUrl}}' style='width:100%;'></image>
         <view class='newGoodsItemName'>{{item.name}}</view>
         <view class='newGoodsItemActive'>{{item.remark}}</view>
       </navigator>
-     </view>
+     </view> -->
 
     <view class='specialGoods'>
       <view class='goodTitle'>福利专场</view>
       <view class='textColor'>每天早10晚8准时上新</view>
       <view class='goodItem'>
-        <view wx:for="{{getHotGoodsList.list}}" wx:key="{{getHotGoodsList.list.id}}" style='width:340rpx;height:450rpx;margin-top:20rpx;'>
+        <view wx:for="{{getHotGoodsList.result}}" wx:key="{{getHotGoodsList.list.id}}" style='width:340rpx;height:450rpx;margin-top:20rpx;'>
           <navigator url="/pages/goodsItem/goodsItem?id={{item.id}}">
             <view style='display:flex;justify-content:center;border:1rpx solid #e6e6e6;margin-bottom:20rpx;'><image src='{{item.imgUrl}}' style='width:250rpx;height:300rpx;'></image></view>
           </navigator>

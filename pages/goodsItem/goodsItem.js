@@ -16,10 +16,13 @@ Page({
   onLoad: function (options) {
     console.log(options.id)
     var that = this;
-    API.ajax('goods/getGoodsInfo?key=',function(res){
-      var re = res.result.details.split(';')
-      that.setData({
-        goodsItem: res.result
+    API.ajax('goods/detail?goodsId=' + options.id,function(res){
+      console.log(res.data.result);
+      console.log(res.data.result[0].details);
+      var re = res.data.result[0].details.split(';');
+      console.log('re',re);
+        that.setData({
+        goodsItem: res.data
       });
       that.setData({
         showInstr:re
